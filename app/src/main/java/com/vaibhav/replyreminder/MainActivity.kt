@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ReplyReminderTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    FirstPreviewer()
+                    FirstPreview()
                 }
             }
         }
@@ -30,7 +30,9 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun FirstPreviewer(){
-    Text(text = "Hello Android !")
+fun FirstPreview(){
+    ReplyReminderTheme {
+        Text(text = "Hello Android !")
+    }
 }
 
